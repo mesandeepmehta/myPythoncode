@@ -1,0 +1,5 @@
+lorem =  open("lorem.txt", "r")
+print(lorem.readlines())
+lorem1= open("lorem1", "w")
+lorem1.write("hello world \n maths is fun")
+print(lorem1)
