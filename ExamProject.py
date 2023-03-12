@@ -12,9 +12,9 @@ exampaper=[exam(Questions[0], "b"),
 def startexam(paper):
     score=0
     for question in paper:
-        a=input(question.Questionprompt+ ":\n ")
+        a=input(question.Questionprompt + ":\n ")      #Question prompt is the input prompt
         if a==question.answer:
             score+=1
-    print("You scored " + str(score) + " /"+ str(len(paper)))
+    print("You scored " + str(score) + " /"+ str(len(paper)))        #strings cannot be concatenated with integers
 
-startexam(exampaper)
+startexam(exampaper)            #call this function to start exam
